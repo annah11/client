@@ -1,25 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { StreamChat } from 'stream-chat';
 import { Chat } from 'stream-chat-react';
-import cookies from 'universal-cookie';
-import ChannelListContainer from './components/ChannelListContainer';
-import Channelconiener from './components/Channelconiener';
 
 
-import { ChannelListContainer, Channelconiener } from './components';
-const apikey = 'https://chat-app-mychats.herokuapp.com/';
-const client = StreamChat.getInstance(apikey);
+import { ChannelListContainer, ChannelContainer } from './components';
+
+import 'stream-chat-react/dist/css/v2/index.css';
+
+import './App.css';
+
+
+// eslint-disable-next-line no-undef
+const client = StreamChat.getInstance(aiken);
 const app = () => {
   return (
     <div className='app_wrapper'>
-        <Chat
-            apiKey={apikey}
-            theme='light_theme'
-            channel='my-channel'
-            clientOptions={{
-              userId: cookies.fromJSON(document.cookie).userId,
-            }}
-        />
+      <Chat client={client} theme="team light">
+              {/* apiKey={thdfb9n9km77} */}
+           <ChannelListContainer 
+           
+           />
+           <ChannelContainer
+           
+           />
+        </Chat>
 
     </div>
   )

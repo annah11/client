@@ -1,2 +1,2 @@
 export { default as ChannelListContainer } from './ChannelListContainer';
-export { default as Channelconiener } from './Channelconiener';
+export { default as ChannelContainer } from './ChannelContainer';
